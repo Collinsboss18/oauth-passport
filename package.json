@@ -21,7 +21,11 @@
 		"nodemon": "^2.0.6"
 	},
 	"repository": {
-		"url": "https://github.com/Collinsboss18/oauth-passport",
-		"directory": "https://github.com/Collinsboss18/oauth-passport.git"
-	}
+		"type": "git",
+    	"url": "git+https://github.com/Collinsboss18/oauth-passport"
+	},
+	"bugs": {
+    	"url": "https://github.com/Collinsboss18/oauth-passport/issues"
+  	},
+  	"homepage": "https://github.com/Collinsboss18/oauth-passport#readme"
 }
