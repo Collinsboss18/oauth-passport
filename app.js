@@ -27,6 +27,7 @@ require('./config/db');
 require('./config/passport-setup');
 
 // Routes setup
+app.use('/profile', require('./routes/profileRoutes'));
 app.use('/auth', require('./routes/authRoutes'));
 app.get('/', (req, res) => res.render('home'));
 app.get('*', (req, res) => res.render('errors/404'));
