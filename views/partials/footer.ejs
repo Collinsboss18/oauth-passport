@@ -1,0 +1,33 @@
+<!-- Preloader -->
+<div class="loader preloader-wrapper big active" style="margin: auto; display: block">
+	<div class="spinner-layer spinner-red-only lighten-2">
+		<div class="circle-clipper left">
+			<div class="circle"></div>
+		</div>
+		<div class="circle-clipper right">
+			<div class="circle"></div>
+		</div>
+	</div>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script>
+	// Todo: Custom JavaScript And JQuery
+	// Hide Sections
+	$('.section').hide();
+	setTimeout(function () {
+		// Show Sections
+		$('.section').fadeIn();
+		$('.loader').fadeOut();
+		$(document).ready(function () {
+			// Init Side-Nav
+			$('.button-collapse').sideNav();
+			// Init Modal
+			$('.modal').modal();
+			// Init Select
+			$('select').material_select();
+		});
+	}, 1000);
+</script>
+</body>
+</html>
