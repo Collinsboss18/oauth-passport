@@ -22,10 +22,10 @@
 	},
 	"repository": {
 		"type": "git",
-    	"url": "git+https://github.com/Collinsboss18/oauth-passport"
+		"url": "git+https://github.com/Collinsboss18/oauth-passport"
 	},
 	"bugs": {
-    	"url": "https://github.com/Collinsboss18/oauth-passport/issues"
-  	},
-  	"homepage": "https://github.com/Collinsboss18/oauth-passport#readme"
+		"url": "https://github.com/Collinsboss18/oauth-passport/issues"
+	},
+	"homepage": "https://github.com/Collinsboss18/oauth-passport#readme"
 }
