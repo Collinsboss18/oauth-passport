@@ -3,7 +3,7 @@ const passport = require('passport');
 
 // Auth Login
 router.get('/login', (req, res) => {
-	res.render('login');
+	res.render('login', {user: req.user});
 });
 
 // Auth with google
@@ -22,7 +22,8 @@ router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
 // Auth logout
 router.get('/logout', (req, res) => {
 	// Passport (Logging out)
-	send('Logging... out');
+    req.logOut();
+    res.redirect('/');
 });
 
 module.exports = router;

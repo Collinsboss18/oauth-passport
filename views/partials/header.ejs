@@ -15,8 +15,13 @@
             <a href="index.html" class="brand-logo">OAuth</a>
             <ul class="right hide-on-med-and-down">
                 <li class=""><a href="/">Home</a></li>
-                <li><a href="/auth/login">Login</a></li>
-                <li><a href="#" class="btn waves-effect waves-light red lighten-1">Sign Up</a></li>
+                <% if(user) { %> 
+                    <li><a href="/profile">Profile</a></li> 
+                    <li><a href="/auth/logout">Logout</a></li> 
+                    <% } else { %> 
+                    <li><a href="/auth/login">Login</a></li> 
+                    <li><a href="#" class="btn waves-effect waves-light red lighten-1">Sign Up</a></li>
+                <% } %>
             </ul>
         </div>
     </div>

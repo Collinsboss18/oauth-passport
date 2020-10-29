@@ -29,7 +29,7 @@ require('./config/passport-setup');
 // Routes setup
 app.use('/profile', require('./routes/profileRoutes'));
 app.use('/auth', require('./routes/authRoutes'));
-app.get('/', (req, res) => res.render('home'));
+app.get('/', (req, res) => res.render('home', { user: req.user }));
 app.get('*', (req, res) => res.render('errors/404'));
 
 server.listen(port, () => console.log(`Server Listening on PORT ${port}`));
