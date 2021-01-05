@@ -1,4 +1,4 @@
-# Google Authentication Using Passport
+# Google Authentication Using NodeJs (Passport)
 
 ## Technologies
 
